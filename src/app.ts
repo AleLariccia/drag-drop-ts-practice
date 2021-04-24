@@ -44,9 +44,28 @@ class ProjectInput {
     this.attach();
   }
 
+  private gatherUserInput(): [string, string, number] | undefined {
+    const enteredTitle = this.titleInputElement.value;
+    const enteredDescription = this.descriptionInputElement.value;
+    const enteredPeople = this.peopleInputElement.value;
+
+    if (
+      enteredTitle.trim().length === 0 ||
+      enteredDescription.trim().length === 0 ||
+      enteredPeople.trim().length === 0
+    ) {
+      alert("Some fields are not valid");
+      return;
+    }
+
+    return [enteredTitle, enteredDescription, +enteredPeople];
+  }
+
   @Autobind
   private submitHandler(event: Event) {
     event.preventDefault();
+    const tupla = this.gatherUserInput();
+    console.log('tupla', tupla);
   }
 
   private configure() {
