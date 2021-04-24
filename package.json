@@ -1,0 +1,29 @@
+{
+  "name": "typescript-practice",
+  "version": "1.0.0",
+  "description": "Repository to use in my learning typescript practices",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleLariccia/typescript-practice.git"
+  },
+  "keywords": [
+    "practice",
+    "typescript",
+    "learning",
+    "project"
+  ],
+  "author": "Alejandro Lariccia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AleLariccia/typescript-practice/issues"
+  },
+  "homepage": "https://github.com/AleLariccia/typescript-practice#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
