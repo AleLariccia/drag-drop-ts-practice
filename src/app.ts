@@ -1,4 +1,5 @@
 /// <reference path="drag-drop-interfaces.ts" />
+/// <reference path="project-model.ts" />
 
 namespace App {
   interface Validatable {
@@ -63,21 +64,6 @@ namespace App {
       },
     };
   };
-
-  enum ProjectStatus {
-    Active,
-    Finished,
-  }
-
-  class Project {
-    constructor(
-      public id: string,
-      public title: string,
-      public description: string,
-      public people: number,
-      public status: ProjectStatus
-    ) {}
-  }
 
   type Listener<T> = (items: T[]) => void;
 
@@ -395,4 +381,4 @@ namespace App {
   new ProjectInput();
   new ProjectList("active");
   new ProjectList("finished");
-}
+};

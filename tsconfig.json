@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "commonjs",
+    "module": "amd",
     "lib": [
       "dom",
       "es6",
@@ -9,6 +9,7 @@
       "scripthost"
     ],
     "sourceMap": true,
+    "outFile": "./dist/bundle.js",
     "outDir": "./dist",
     "rootDir": "./src",
     "removeComments": true,
@@ -19,6 +20,7 @@
     "noImplicitReturns": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
+    
   },
   "exclude": [
     "node_modules"
