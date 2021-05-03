@@ -1,2 +1,2 @@
-# typescript-practice
-Repository to use in my learning typescript practices
+# drag-drop-typescript-practice
+A little drag and drop basic project to practice Typescript
